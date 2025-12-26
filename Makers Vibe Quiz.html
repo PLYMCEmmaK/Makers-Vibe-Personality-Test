@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Makers Vibe Quiz.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Makers Vibe Quiz" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="A0DECB51-B3EE-46AD-BB98-A7A6654A6FCC" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="800,300" size="100,100">(set: $designer to 0)
+<tw-storydata name="Makers Vibe Quiz" startnode="1" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="A0DECB51-B3EE-46AD-BB98-A7A6654A6FCC" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="StartScreen" tags="" position="800,300" size="100,100">(set: $designer to 0)
 (set: $builder to 0)
 (set: $crafter to 0)
 (set: $visionary to 0)
@@ -19,157 +19,187 @@ What&#39;s your Maker vibe? Take the quiz to find out what group you belong to!
 
 [[Start the quiz -&gt;Q1]]</tw-passagedata><tw-passagedata pid="2" name="Q1" tags="" position="800,425" size="100,100">What motivates you the most when making something?
 
-(link-goto: &quot;Creating something useful/functional.&quot;, &quot;Q2&quot;)[
+(link: &quot;Creating something useful/functional.&quot;)[
   (set: $builder to $builder + 1)
+  (goto: &quot;Q2&quot;)
 ]
 
-(link-goto: &quot;Experimenting with everything.&quot;, &quot;Q2&quot;)[
+(link: &quot;Experimenting with everything.&quot;)[
   (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q2&quot;)
 ]
 
-(link-goto: &quot;Making things look cool.&quot;, &quot;Q2&quot;)[
+(link: &quot;Making things look cool.&quot;)[
   (set: $designer to $designer + 1)
+  (goto: &quot;Q2&quot;)
 ]
 
-(link-goto: &quot;Building skills for future projects.&quot;, &quot;Q2&quot;)[
+(link: &quot;Building skills for future projects.&quot;)[
   (set: $crafter to $crafter + 1)
+  (goto: &quot;Q2&quot;)
 ]
 
-(link-goto: &quot;Expressing myself creatively.&quot;, &quot;Q2&quot;)[
+(link: &quot;Expressing myself creatively.&quot;)[
   (set: $visionary to $visionary + 1)
+  (goto: &quot;Q2&quot;)
 ]
 </tw-passagedata><tw-passagedata pid="3" name="Q2" tags="" position="800,550" size="100,100">How do you start making?
 
-(link-goto: &quot;I research everything and plan before I touch a tool.&quot;, &quot;Q3&quot;)[
+(link: &quot;I research everything and plan out what I&#39;m doing before I even touch a tool.&quot;)[
   (set: $builder to $builder + 1)
+  (goto: &quot;Q3&quot;)
 ]
 
-(link-goto: &quot;I like to doodle, diagram, or sketch until it feels real.&quot;, &quot;Q3&quot;)[
+(link: &quot;I like to doodle, diagram, or create messy thumbnails until the plan feels real on paper.&quot;)[
   (set: $designer to $designer + 1)
+  (goto: &quot;Q3&quot;)
 ]
 
-(link-goto: &quot;I grab a tool and figure it out as I go.&quot;, &quot;Q3&quot;)[
+(link: &quot;I grab the first tool I need and start making immediately. I like to figure it out as I go!&quot;)[
   (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q3&quot;)
 ]
 
-(link-goto: &quot;I collect materials and let them guide the project.&quot;, &quot;Q3&quot;)[
+(link: &quot;I collect colors, textures, tools, and pieces first, letting the materials tell me what the project wants to become.&quot;)[
   (set: $visionary to $visionary + 1)
+  (goto: &quot;Q3&quot;)
 ]
 
-(link-goto: &quot;I test, tweak, break, fix, and refine.&quot;, &quot;Q3&quot;)[
+(link: &quot;I like to test, tweak, break, fix, adjust, and experiment until everything finally clicks into place.&quot;)[
   (set: $crafter to $crafter + 1)
+  (goto: &quot;Q3&quot;)
 ]
 </tw-passagedata><tw-passagedata pid="4" name="Q3" tags="" position="800,675" size="100,100">When you walk into the DIY Space, what&#39;s the FIRST thing you do?
 
-(link-goto: &quot;I head straight for whatever machine is free.&quot;, &quot;Q4&quot;)[
+(link: &quot;I head straight for the whatever machine is free. The tools set the tone for my whole session.&quot;)[
   (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q4&quot;)
 ]
 
-(link-goto: &quot;I wander past projects to soak up ideas.&quot;, &quot;Q4&quot;)[
+(link: &quot;I wander past projects-in-progress to soak up ideas before choosing my own direction.&quot;)[
   (set: $designer to $designer + 1)
+  (goto: &quot;Q4&quot;)
 ]
 
-(link-goto: &quot;I scan materials waiting for inspiration.&quot;, &quot;Q4&quot;)[
+(link: &quot;I scan the vinyl, fabric, paper, and filament first, waiting for something to spark an idea.&quot;)[
   (set: $crafter to $crafter + 1)
+  (goto: &quot;Q4&quot;)
 ]
 
-(link-goto: &quot;I claim a table and map out my steps.&quot;, &quot;Q4&quot;)[
+(link: &quot;I claim a table, open a notebook, and map out my steps before anything else. I like going in with a plan!&quot;)[
   (set: $builder to $builder + 1)
+  (goto: &quot;Q4&quot;)
 ]
 
-(link-goto: &quot;I arrive buzzing with an idea and jump in.&quot;, &quot;Q4&quot;)[
+(link: &quot;I walk in with an idea already buzzing in my head and immediately get to work.&quot;)[
   (set: $visionary to $visionary + 1)
+  (goto: &quot;Q4&quot;)
 ]
 </tw-passagedata><tw-passagedata pid="5" name="Q4" tags="" position="800,800" size="100,100">Pick a project you&#39;d be proud of:
 
-(link-goto: &quot;A phone stand in your favorite color.&quot;, &quot;Q5&quot;)[
+(link: &quot;A phone stand in your favorite color.&quot;)[
   (set: $builder to $builder + 1)
+  (goto: &quot;Q5&quot;)
 ]
 
-(link-goto: &quot;A collage-style poster for a band.&quot;, &quot;Q5&quot;)[
+(link: &quot;A collage-style poster for a band.&quot;)[
   (set: $visionary to $visionary + 1)
+  (goto: &quot;Q5&quot;)
 ]
 
-(link-goto: &quot;A clean logo for your budding business.&quot;, &quot;Q5&quot;)[
+(link: &quot;A clean logo for your budding business.&quot;)[
   (set: $designer to $designer + 1)
+  (goto: &quot;Q5&quot;)
 ]
 
-(link-goto: &quot;Sewing a tote bag with a favorite book quote.&quot;, &quot;Q5&quot;)[
+(link: &quot;Sewing a tote bag with your favorite line from your favorite book.&quot;)[
   (set: $crafter to $crafter + 1)
+  (goto: &quot;Q5&quot;)
 ]
 
-(link-goto: &quot;A small robot with 3D-printed parts.&quot;, &quot;Q5&quot;)[
+(link: &quot;A little robot with 3D-printed parts and a simple circuit system.&quot;)[
   (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q5&quot;)
 ]
 </tw-passagedata><tw-passagedata pid="6" name="Q5" tags="" position="800,925" size="100,100">Which statement matches your Maker personality best?
 
-(link-goto: &quot;I love figuring out how things work.&quot;, &quot;Q6&quot;)[
+(link: &quot;I love figuring out how things work.&quot;)[
   (set: $builder to $builder + 1)
+  (goto: &quot;Q6&quot;)
 ]
 
-(link-goto: &quot;I follow my curiosity.&quot;, &quot;Q6&quot;)[
+(link: &quot;I follow my curiosity.&quot;)[
   (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q6&quot;)
 ]
 
-(link-goto: &quot;I want what I make to look AMAZING!&quot;, &quot;Q6&quot;)[
+(link: &quot;I want what I make to look AMAZING!&quot;)[
   (set: $designer to $designer + 1)
+  (goto: &quot;Q6&quot;)
 ]
 
-(link-goto: &quot;I enjoy steady, cozy crafting.&quot;, &quot;Q6&quot;)[
+(link: &quot;I enjoy steady, cozy crafting.&quot;)[
   (set: $crafter to $crafter + 1)
+  (goto: &quot;Q6&quot;)
 ]
 
-(link-goto: &quot;I dream big, then build toward it.&quot;, &quot;Q6&quot;)[
+(link: &quot;I dream big, then build toward it.&quot;)[
   (set: $visionary to $visionary + 1)
+  (goto: &quot;Q6&quot;)
 ]
 </tw-passagedata><tw-passagedata pid="7" name="Q6" tags="" position="800,1050" size="100,100">What&#39;s your ideal creative pace?
 
-(link-goto: &quot;I move fast and refine later.&quot;, &quot;Q7&quot;)[
+(link: &quot;I move fast and refine later.&quot;)[
   (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q7&quot;)
 ]
 
-(link-goto: &quot;I take my time and enjoy the process.&quot;, &quot;Q7&quot;)[
+(link: &quot;I take my time and enjoy the process.&quot;)[
   (set: $crafter to $crafter + 1)
+  (goto: &quot;Q7&quot;)
 ]
 
-(link-goto: &quot;I troubleshoot and refine until it works.&quot;, &quot;Q7&quot;)[
+(link: &quot;I troubleshoot and refine until it works.&quot;)[
   (set: $builder to $builder + 1)
+  (goto: &quot;Q7&quot;)
 ]
 
-(link-goto: &quot;I work in intense bursts of inspiration.&quot;, &quot;Q7&quot;)[
+(link: &quot;I work in intense bursts of inspiration.&quot;)[
   (set: $visionary to $visionary + 1)
+  (goto: &quot;Q7&quot;)
 ]
 
-(link-goto: &quot;I like a clear, structured roadmap.&quot;, &quot;Q7&quot;)[
+(link: &quot;I like a clear, structured roadmap.&quot;)[
   (set: $designer to $designer + 1)
+  (goto: &quot;Q7&quot;)
 ]
 </tw-passagedata><tw-passagedata pid="8" name="Q7" tags="" position="800,1175" size="100,100">Pick a tool that feels most like you:
 
 (link: &quot;Cricut: You&#39;re precise, aesthetic-minded, and love clean lines for polished designs. You bring order to chaos, one perfect cut at a time.&quot;)[
   (set: $designer to $designer + 1)
-  (goto: &quot;Q9&quot;)
+  (goto: &quot;Q8&quot;)
 ]
 
 (link: &quot;3D Printer: You&#39;re a problem-solver with a tech streak -- practical, experimental, and always thinking three steps ahead. You like building things layer by layer.&quot;)[
   (set: $builder to $builder + 1)
-  (goto: &quot;Q9&quot;)
+  (goto: &quot;Q8&quot;)
 ]
 
 (link: &quot;Sewing Machine: You&#39;re cozy, creative, and detail-oriented. You&#39;re someone who loves textures, patterns, and making things that feel personal and handmade.&quot;)[
   (set: $crafter to $crafter + 1)
-  (goto: &quot;Q9&quot;)
+  (goto: &quot;Q8&quot;)
 ]
 
 (link: &quot;iMac: You&#39;re a digital dreamer and a jack-of-all-trades! You like to know how to use everything -- from illustration to design, to editing. Your ideas live at the intersection of art and technology.&quot;)[
   (set: $visionary to $visionary + 1)
-  (goto: &quot;Q9&quot;)
+  (goto: &quot;Q8&quot;)
 ]
 
 (link: &quot;Button Maker: You&#39;re quick, playful, and full of personality. You&#39;re someone who loves bold ideas, instant gratification, and sharing your creations with others.&quot;)[
   (set: $experimenter to $experimenter + 1)
-  (goto: &quot;Q9&quot;)
+  (goto: &quot;Q8&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="9" name="Q9" tags="" position="800,1300" size="100,100">What kind of problem do you like solving the most?
+</tw-passagedata><tw-passagedata pid="9" name="Q9" tags="" position="800,1425" size="100,100">What kind of problem do you like solving the most?
 
 (link: &quot;Technical problems. I enjoy figuring out how things work - troubleshooting machines, fixing errors, or engineering a solution when something doesn&#39;t behave the way it should.&quot;)[
   (set: $builder to $builder + 1)
@@ -195,7 +225,7 @@ What&#39;s your Maker vibe? Take the quiz to find out what group you belong to!
   (set: $visionary to $visionary + 1)
   (goto: &quot; Q10&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="10" name=" Q10" tags="" position="800,1425" size="100,100">Pick an aesthetic:
+</tw-passagedata><tw-passagedata pid="10" name=" Q10" tags="" position="800,1550" size="100,100">Pick an aesthetic:
 
 (link: &quot;Bright. Bold colors, playful shapes, and designs that pop. Key words that fit are \&quot;energetic\&quot; and \&quot;joyful\&quot;.&quot;)[
   (set: $visionary to $visionary + 1)
@@ -221,11 +251,14 @@ What&#39;s your Maker vibe? Take the quiz to find out what group you belong to!
   (set: $experimenter to $experimenter + 1)
   (goto: &quot; ResultRouter&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="11" name=" ResultRouter" tags="" position="800,1550" size="100,100">Builder: $builder
+</tw-passagedata><tw-passagedata pid="11" name=" ResultRouter" tags="" position="800,1675" size="100,100">Builder: $builder
 Designer: $designer
 Crafter: $crafter
 Visionary: $visionary
 Experimenter: $experimenter
+
+Total: (print: $builder + $designer + $crafter + $visionary + $experimenter)
+Builder: $builder | Designer: $designer | Crafter: $crafter | Visionary: $visionary | Experimenter: $experimenter
 
 (if: $builder &gt; $designer
 and $builder &gt; $crafter
@@ -258,9 +291,15 @@ and $experimenter &gt; $visionary)[
   (goto: &quot;ExperimenterResult&quot;)
 ]
 (else:)[
-  (goto: &quot;HybridResult&quot;)
+  (goto: &quot;HybridRouter&quot;)
 ]
-</tw-passagedata><tw-passagedata pid="12" name="BuilderResult" tags="" position="500,1650" size="100,100">&#39;&#39;Builder&#39;&#39;
+
+</tw-passagedata><tw-passagedata pid="12" name="BuilderResult" tags="" position="500,1800" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Builder&#39;&#39;
+*The Thoughtful Fixer*
 
 You enjoy figuring out how things work and making them work well. Function, structure, and problem-solving motivate you, and you take pride in creating things that serve a clear purpose. When something breaks, feels inefficient, or could be improved, you see an opportunity rather than a setback. 
 
@@ -277,7 +316,12 @@ You&#39;re likely someone who enjoys troubleshooting, testing ideas, and refinin
 * Laptops: Use CAD and slicing software to design, adjust, and prepare your projects. 
 
 &#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
-Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="13" name="DesignerResult" tags="" position="800,1650" size="100,100">&#39;&#39;Designer&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="13" name="DesignerResult" tags="" position="800,1800" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Designer&#39;&#39;
+*The Intentional Stylist*
 
 You care deeply about how your projects look and feel. Color, layout, typography, and visual balance are more than just details -- they&#39;re what bring the work to life. You notice when something feels &quot;off,&quot; and you love refining ideas until they feel intentional, polished, and expressive. You&#39;re likely drawn to visual storytelling and enjoy shaping how others experience your work. 
 
@@ -294,7 +338,12 @@ You may already feel comfortable with creative software, or you might just have 
 * They also have very informative tutorials. Try them out! 
 
 &#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
-Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="14" name="VisionaryResult" tags="" position="650,1650" size="100,100">&#39;&#39;Visionary&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="14" name="VisionaryResult" tags="" position="650,1800" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Visionary&#39;&#39;
+*The Big-Picture Dreamer*
 
 You think in ideas, possibilities, and big-picture concepts. You&#39;re energized by imagining what could exist and enjoy connecting themes, stories, or systems into something larger. Even when a project feels ambitious, you&#39;re excited by the challenge of bringing it to life piece by piece. 
 
@@ -310,7 +359,12 @@ You may start with a sketch, a concept, or a &quot;what if?&quot; rather than a 
 * Recording Studio: Useful for recording quick ideas and learning entry editing skills when using our iMac for post-recording editing. 
 
 &#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
-Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="15" name="ExperimenterResult" tags="" position="950,1650" size="100,100">&#39;&#39;Experimenter&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="15" name="ExperimenterResult" tags="" position="950,1800" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Experimenter&#39;&#39;
+*The Curious Explorer*
 
 You thrive on curiosity and discovery. Trying new tools, remixing ideas, and seeing what happens excites you, even if the outcome is unexpected. You&#39;re comfortable with uncertainty and enjoy learning through hands-on exploration. 
 
@@ -326,7 +380,12 @@ You may not always start with a clear plan, but that&#39;s part of the fun! For 
 * 3D Printer: Great for test prints, odd shapes, and tweaking settings. 
 
 &#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
-Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="16" name="CrafterResult" tags="" position="1100,1650" size="100,100">&#39;&#39;Crafter&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="16" name="CrafterResult" tags="" position="1100,1800" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Crafter&#39;&#39;
+*The Patient Maker*
 
 You enjoy steady, intentional making and the comfort of a clear process. There&#39;s something deeply satisfying to you about working step by step, focusing on details, and watching a project come together at its own pace. The act of making itself is calming and rewarding. 
 
@@ -344,19 +403,332 @@ You likely appreciate projects that feel cozy, practical, or thoughtfully constr
 * Cricut: Personal, handmade items that show how much you care. 
 
 &#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
-Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="17" name="HybridResult" tags="" position="800,1800" size="100,100">&#39;&#39;Jack of All Trades&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata><tw-passagedata pid="17" name="MultiVibeResult" tags="" position="800,2300" size="100,100">&#39;&#39;Results&#39;&#39;
 
-You got a hybrid result :)
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
 
-&#39;&#39;Challenges and Projects &#39;&#39;
-* do things 
-* stuff is fun
+&#39;&#39;Jack of All Trades&#39;&#39;
+
+You don’t fit neatly into one category, and that’s a strength. Your answers show strong pulls in multiple directions, which means you’re adaptable, curious, and comfortable switching approaches depending on the project. 
+
+You’re likely someone who can blend tools, mix methods, and learn quickly. You follow what the project needs, not a single fixed style.
+
+&#39;&#39;Try this first&#39;&#39;
+* Pick one small project and choose the tool that excites you most today.
+* Try a quick “sampler session”: 10 minutes on two different tools.
+* Notice what felt easiest and what felt most fun. 
+* Explore your interests!
 
 &#39;&#39;Machines to Try&#39;&#39;
-* everything :D 
+* iMac: A great hub for planning, design, and digital-to-physical projects.
+* Cricut: Quick, clean results that pair well with almost anything. 
+* Laminator: An understated machine that can only do one thing. Try coming up with creative uses for a simple machine! 
+* 3D Printer: Great for learning-by-doing and iterative builds.
 
 &#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
-Try something small, ask questions, and don&#39;t be afraid to fail up! </tw-passagedata></tw-storydata>
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="18" name="HybridRouter" tags="" position="800,1925" size="100,100">(set: $top to (max: $builder, $designer, $crafter, $visionary, $experimenter))
+
+/* Two-way ties for TOP score (10 combos) */
+
+(if: $builder is $top and $designer is $top and $crafter &lt; $top and $visionary &lt; $top and $experimenter &lt; $top)[
+  (goto: &quot;BuilderDesignerResult&quot;)
+]
+(else-if: $builder is $top and $crafter is $top and $designer &lt; $top and $visionary &lt; $top and $experimenter &lt; $top)[
+  (goto: &quot;BuilderCrafterResult&quot;)
+]
+(else-if: $builder is $top and $visionary is $top and $designer &lt; $top and $crafter &lt; $top and $experimenter &lt; $top)[
+  (goto: &quot;BuilderVisionaryResult&quot;)
+]
+(else-if: $builder is $top and $experimenter is $top and $designer &lt; $top and $crafter &lt; $top and $visionary &lt; $top)[
+  (goto: &quot;BuilderExperimenterResult&quot;)
+]
+
+(else-if: $designer is $top and $crafter is $top and $builder &lt; $top and $visionary &lt; $top and $experimenter &lt; $top)[
+  (goto: &quot;DesignerCrafterResult&quot;)
+]
+(else-if: $designer is $top and $visionary is $top and $builder &lt; $top and $crafter &lt; $top and $experimenter &lt; $top)[
+  (goto: &quot;DesignerVisionaryResult&quot;)
+]
+(else-if: $designer is $top and $experimenter is $top and $builder &lt; $top and $crafter &lt; $top and $visionary &lt; $top)[
+  (goto: &quot;DesignerExperimenterResult&quot;)
+]
+
+(else-if: $crafter is $top and $visionary is $top and $builder &lt; $top and $designer &lt; $top and $experimenter &lt; $top)[
+  (goto: &quot;CrafterVisionaryResult&quot;)
+]
+(else-if: $crafter is $top and $experimenter is $top and $builder &lt; $top and $designer &lt; $top and $visionary &lt; $top)[
+  (goto: &quot;CrafterExperimenterResult&quot;)
+]
+
+(else-if: $visionary is $top and $experimenter is $top and $builder &lt; $top and $designer &lt; $top and $crafter &lt; $top)[
+  (goto: &quot;VisionaryExperimenterResult&quot;)
+]
+
+/* Anything else = 3+ tie, weird distribution, or edge case */
+(else:)[
+  (goto: &quot;MultiVibeResult&quot;)
+]
+</tw-passagedata><tw-passagedata pid="19" name="BuilderCrafterResult" tags="" position="650,2050" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Builder–Crafter&#39;&#39;
+*The Thoughtful Maker*
+
+You love making things that are useful, reliable, and built to last—but you also care about the hands-on process and the little details. You enjoy steady progress, skill-building, and projects that feel satisfying to improve over time.
+
+You’re likely someone who enjoys troubleshooting *and* craftsmanship: testing what works, then refining it until it feels solid, neat, and well-finished.
+
+&#39;&#39;Challenges and Projects&#39;&#39;
+* Make a practical project with a personal touch (a tote, pouch, organizer, or tool wrap).
+* Take a simple design and improve it through iterations—stronger, cleaner, more efficient.
+* Create something that solves a daily problem and feels good to use (a strap, sleeve, case, or holder).
+
+&#39;&#39;Machines to Try&#39;&#39;
+* 3D Printer: Great for sturdy, functional parts and custom organizers.
+* Sewing Machine: Perfect for durable, useful items that you can refine over time.
+* Laminator: Helpful for reusable guides, patterns, and templates.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="20" name="BuilderDesignerResult" tags="" position="500,2050" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Builder–Designer&#39;&#39;
+
+You’re motivated by function *and* finish. You like solutions that work smoothly, but you also want the final result to look clean, intentional, and well-made. When something feels messy or inefficient, your brain immediately starts organizing it into a better system.
+
+You’re likely someone who enjoys improving an idea through refinement—adjusting measurements, simplifying steps, and polishing the design until it feels both reliable and visually satisfying.
+
+&#39;&#39;Challenges and Projects&#39;&#39;
+* Design a functional item (like a phone stand or label system) and customize it with a clean visual style.
+* Take an existing file and improve both usability and aesthetics (stronger, simpler, nicer finish).
+* Build a small “tool for your tools” project—like a storage tray with clear labels or a tidy organizer.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* 3D Printer: Great for practical prints with a clean, intentional finish.
+* Cricut: Perfect for labels, decals, stencils, and polished details.
+* Laptops: Use CAD/design software to iterate and refine your project.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="21" name="BuilderVisionaryResult" tags="" position="800,2050" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Builder–Visionary&#39;&#39;
+*The Systems Dreamer*
+
+You dream big, and you also have the drive to make it real. You’re energized by ambitious ideas, and you naturally start turning “what if?” into “how do I build this?” You like the challenge of making something complex feel doable.
+
+You’re likely someone who can see the big picture and then break it down into steps. For you, making is about transforming a vision into something functional, piece by piece.
+
+&#39;&#39;Try this first&#39;&#39;
+* Write down your big idea, then list the first three concrete steps.
+* Build a “proof of concept” version before aiming for the final.
+* Pick one part of the bigger project and make *that* the first build.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* 3D Printer: Great for prototypes, functional parts, and iterative building.
+* Laptops: Perfect for planning, research, and designing the system behind the idea.
+* iMac: Helpful for sketching, mapping, and visualizing the final concept.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="22" name="BuilderExperimenterResult" tags="" position="950,2050" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Builder–Experimenter&#39;&#39;
+*Adaptive Problem-Solver*
+
+You’re a hands-on problem solver with a curiosity streak. You enjoy figuring things out by trying, testing, and iterating in real time -- especially when there’s a puzzle to solve or a system to improve.
+
+You’re likely someone who learns fastest through doing. When something goes wrong, you don’t panic. You treat it like data, adjust, and try again until the solution clicks.
+
+&#39;&#39;Challenges and Projects&#39;&#39;
+* Prototype a functional object and intentionally test two versions to see what works best.
+* Troubleshoot a “mystery problem” project—fix, adjust, and document what you learned.
+* Remix an existing design and improve it through trial runs and mini experiments.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* 3D Printer: Perfect for iteration, prototyping, and test-print learning.
+* Laptops: Useful for slicing, tweaks, and researching solutions as you go.
+* Button Maker: Great for quick experiments and playful creative iterations.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="23" name="DesignerCrafterResult" tags="" position="1100,2050" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Designer–Crafter&#39;&#39;
+*The Detail-Oriented Artist*
+
+You care about the look *and* the feel. You’re detail-oriented, aesthetic-minded, and drawn to projects that feel personal and thoughtfully made. You enjoy creating something that looks polished but still has warmth and character.
+
+You’re likely someone who enjoys refining little choices such as color, layout, texture, and spacing, until the final piece feels balanced and satisfying.
+
+&#39;&#39;Challenges and Projects&#39;&#39;
+* Create a project that mixes design + handmade detail (cards, totes, patches, labels, decor).
+* Build a small “brand set” for yourself: colors, icons, a simple logo, and a finished item.
+* Take a cozy craft project and add polished design choices (clean typography, layout, and composition).
+
+&#39;&#39;Machines to Try&#39;&#39;
+* Cricut: Great for clean cuts, crisp lettering, and polished design elements.
+* Sewing Machine: Perfect for personal, handmade projects with texture and detail.
+* Laminator: Useful for durable prints, guides, and finished presentation pieces.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="24" name="DesignerVisionaryResult" tags="" position="500,2175" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Designer–Visionary&#39;&#39;
+*The Conceptual Creator*
+
+You think in concepts, vibes, and big-picture creative direction. You’re energized by ideas that feel meaningful or expressive, and you want the final result to look intentional, cohesive, and *amazing*.
+
+You’re likely someone who can take a spark of inspiration and turn it into a whole visual identity: theme, style, mood, and message working together.
+
+&#39;&#39;Try this first&#39;&#39;
+* Start with a theme (a word, mood, or story) and build your design choices around it.
+* Make a quick mood board: colors, fonts, shapes, and references.
+* Create a “first draft” version fast, then refine it into a cohesive final.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* iMac: Perfect for design, illustration, concept work, and creative planning.
+* Cricut: Great for translating a strong design into a clean physical result.
+* Button Maker: A fun way to turn bold ideas into sharable creations quickly.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="25" name="DesignerExperimenterResult" tags="" position="650,2175" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Designer–Experimenter&#39;&#39;
+*The Playful Stylist*
+
+You chase what looks cool and you’re not afraid to play to get there. You like trying new styles, remixing ideas, and experimenting until something clicks. You’re creative, flexible, and comfortable iterating in motion.
+
+You’re likely someone who treats the process like exploration. You test combinations, tweak details, and keep going until the design feels right.
+
+&#39;&#39;Challenges and Projects&#39;&#39;
+* Make three quick variations of the same idea (color swaps, layout changes, style shifts).
+* Remix an existing design into your own version with a new vibe or theme.
+* Create a “limited edition” set (buttons, stickers, or decals) using experimental designs.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* Cricut: Great for quick testing, variations, and polished cut designs.
+* iMac: Perfect for exploring styles, layouts, and digital experimentation.
+* Button Maker: Instant feedback, fast iteration, and playful results.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="26" name="CrafterVisionaryResult" tags="" position="800,2175" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Crafter–Visionary&#39;&#39;
+*The Meaningful Maker*
+
+You’re driven by imagination, meaning, and personal creativity, but you love making things with your hands. You enjoy projects that feel expressive, story-filled, and heartfelt. Your work often feels like it has a “why” behind it.
+
+You’re likely someone who starts with an idea or feeling and then brings it to life through texture, detail, and thoughtful choices.
+
+&#39;&#39;Try this first&#39;&#39;
+* Start with a concept: a memory, theme, phrase, or mood.
+* Make a small version first, such as a sample, swatch, or mini test.
+* Let your materials guide the project, then refine the details to match your idea.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* Sewing Machine: Great for personal projects with texture and story.
+* Cricut: Helpful for adding clean lettering, shapes, and finishing touches.
+* iMac: Useful for planning, sketching, and mapping the bigger concept.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="27" name="CrafterExperimenterResult" tags="" position="950,2175" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Crafter–Experimenter&#39;&#39;
+*The Curious Tinkerer*
+
+You like making with your hands, but you also love trying new methods and seeing what happens. You’re curious, playful, and happiest when you can explore without perfection pressure.
+
+You’re likely someone who learns through doing. Testing techniques, mixing materials, and discovering your favorite approach along the way.
+
+&#39;&#39;Challenges and Projects&#39;&#39;
+* Try a new technique on purpose (a new stitch, material, setting, or method).
+* Make a “test sampler” project: small experiments that teach you what works.
+* Combine two materials or tools in one project and see how they interact.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* Sewing Machine: Perfect for experimenting with techniques and materials.
+* Button Maker: Great for quick, playful tests and instant results.
+* 3D Printer: Fun for experimenting with forms, prototypes, and custom parts.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="28" name="VisionaryExperimenterResult" tags="" position="1100,2175" size="100,100">&#39;&#39;Results&#39;&#39;
+
+B:(print:$builder)  D:(print:$designer)  C:(print:$crafter)  V:(print:$visionary)  E:(print:$experimenter)
+
+&#39;&#39;Visionary–Experimenter&#39;&#39;
+*The Idea Explorer*
+
+You’re fueled by possibility. Your ideas come fast, you follow curiosity, and you love exploring “what if?” paths without needing everything to be defined upfront. You’re comfortable with creative chaos because you trust that something will emerge.
+
+You’re likely someone who starts by exploring and then shapes the final project through discovery. For you, making is about turning sparks into reality through play, iteration, and momentum.
+
+&#39;&#39;Try this first&#39;&#39;
+* Start messy on purpose: brainstorm, sketch, prototype, or test anything.
+* Pick one idea and give it a 15-minute experiment before judging it.
+* Keep what works, toss what doesn’t, and let the project evolve.
+
+&#39;&#39;Machines to Try&#39;&#39;
+* iMac: Great for brainstorming, remixing, and concept exploration.
+* Button Maker: Fast experiments and instant creative feedback.
+* 3D Printer: Perfect for prototyping ideas into real objects quickly.
+
+&#39;&#39;No matter your Maker Vibe, you belong here.&#39;&#39;
+Try something small, ask questions, and don&#39;t be afraid to fail up!
+</tw-passagedata><tw-passagedata pid="29" name="StoryInit" tags="" position="800,175" size="100,100">(set: $designer to 0)
+(set: $builder to 0)
+(set: $crafter to 0)
+(set: $visionary to 0)
+(set: $experimenter to 0)</tw-passagedata><tw-passagedata pid="30" name="Q8" tags="" position="800,1300" size="100,100">When you get stuck on a project, what do you usually do?
+
+(link: &quot;Pause and troubleshoot the issue until I understand what’s going wrong. I want to fix the root of the problem before moving forward.&quot;)[
+  (set: $builder to $builder + 1)
+  (goto: &quot;Q9&quot;)
+]
+
+(link: &quot;Step back and rethink how it looks. Sometimes a visual adjustment or design change helps everything click again.&quot;)[
+  (set: $designer to $designer + 1)
+  (goto: &quot;Q9&quot;)
+]
+
+(link: &quot;Keep working through it slowly and carefully. I’m patient with the process and trust that progress will come with time.&quot;)[
+  (set: $crafter to $crafter + 1)
+  (goto: &quot;Q9&quot;)
+]
+
+(link: &quot;Try something completely different and see what happens. I like exploring new directions instead of forcing a solution.&quot;)[
+  (set: $experimenter to $experimenter + 1)
+  (goto: &quot;Q9&quot;)
+]
+
+(link: &quot;Zoom out and rethink the bigger idea. Sometimes the project just needs a new perspective or purpose.&quot;)[
+  (set: $visionary to $visionary + 1)
+  (goto: &quot;Q9&quot;)
+]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
